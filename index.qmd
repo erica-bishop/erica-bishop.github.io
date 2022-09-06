@@ -1,11 +1,13 @@
 ---
-title: "erica-bishop.github.io"
+title: "Erica Bishop"
+image: eb-headshot-crop.jpg
+about:
+  template: jolla
+  links: 
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/erica-bishop-a404ba132/
+    - text: Email
+      href: mailto:ericabishop@bren.ucsb.edu
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+Welcome to my website! Currently under construction 🛠
