@@ -11,6 +11,6 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "1 + 1\n\n[1] 2"
+    "text": "1 + 1\n\n[1] 2\n\n\n\nthis is my h1 element\n\n\nthis is another h1 element\n\n\nThis is a paragraph\n\n\nThis is another paragraphy paragraph.\n\n\nanother class selector formatting h3 header\n\n\nanother h3 element without class selector"
   }
 ]
