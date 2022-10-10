@@ -1,0 +1,21 @@
+/*-- scss:defaults --*/
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton&family=Prata&display=swap');
+
+//colors
+$fire-coral: #f12948;
+$dark-lilac: #34275c;
+$limestone: #fcf8f2;
+
+//base document colors
+$navbar-bg: $fire-coral;
+$body-bg: $limestone;
+
+//css rules
+h1 {
+  color: green;
+  letter-spacing: 5px;
+}
+

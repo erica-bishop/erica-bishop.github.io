@@ -12,8 +12,9 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      - stylesheet.scss
+    mainfont: Prata
     toc: true
 
 editor: visual
