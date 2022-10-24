@@ -1,0 +1,12 @@
+#options specified here apply to all .qmds in posts folder
+
+# won't re-render every blog posts when you update website unless explicity told to do so
+freeze: true
+
+#enable banner style title blocks
+title-block-banner: true
+
+
+
+
+

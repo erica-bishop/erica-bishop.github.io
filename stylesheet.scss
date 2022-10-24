@@ -8,9 +8,10 @@
 $fire-coral: #f12948;
 $dark-lilac: #34275c;
 $limestone: #fcf8f2;
+$off-white: #f6f5f7;
 
 //base document colors
-$navbar-bg: $fire-coral;
+$navbar-bg: $dark-lilac;
 $body-bg: $limestone;
 
 /*-- scss rules --*/
@@ -22,13 +23,13 @@ h1, h3 {
 }
 
 .title {
-  color: $fire-coral;
+  color: $off-white;
 }
 
 .subtitle-format {
   font-size: 12px;
   font-style: italic;
-  color: $dark-lilac;
+  color: $fire-coral;
 }
 
 

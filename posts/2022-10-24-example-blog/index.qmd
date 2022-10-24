@@ -1,0 +1,16 @@
+---
+title: "First Blog Post"
+description: "description of this great blog post"
+author:
+  - name: Erica Bishop
+    url: https://erica-bishop.github.io/
+    affiliation: Bren School of Environmental Science and Management, UCSB
+    affiliation-url: https://bren.ucsb.edu/
+date: 2022-10-24
+categories: [Examples, R]
+citation:
+  url: https://erica-bishop.github.io/posts/2022-20-24-example-blog
+draft: true
+---
+
+Welcome to my wonderful blog. Very detailed very good.
