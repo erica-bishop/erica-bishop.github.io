@@ -18,6 +18,13 @@
     "href": "blog_options.html",
     "title": "Blog",
     "section": "",
-    "text": "No matching items"
+    "text": "Examples\n\n\nR\n\n\n\ndescription of this great blog post\n\n\n\nErica Bishop\n\n\nOct 24, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2022-10-24-example-blog/index.html",
+    "href": "posts/2022-10-24-example-blog/index.html",
+    "title": "First Blog Post",
+    "section": "",
+    "text": "More text and practice with citing using bibtex auto-generated references (Csik et al. 2022).\nCan also cite from DOI and others with built in quarto features\npractice embedding a tweet\n\n\nSends shivers down my spine! 👻💀🎃 https://t.co/NMJk6oWBnj\n\n— Samantha Csik ((SamanthaCsik?)) October 24, 2022\n\n\n\n\n\n\nReferences\n\nCsik, Samantha, Julie Lowndes, Amy Steiker, Catalina Oaida Taglialatela, Aaron Friesz, J. J. Allaire, Erin Robinson, and Stefanie Butland. 2022. “Hello Quarto!” June 22, 2022. https://www.openscapes.org/blog/2022/06/22/hello-quarto/.\n\nCitationBibTeX citation:@online{bishop2022,\n  author = {Erica Bishop},\n  title = {First {Blog} {Post}},\n  date = {2022-10-24},\n  url = {https://erica-bishop.github.io/posts/2022-20-24-example-blog},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nErica Bishop. 2022. “First Blog Post.” October 24, 2022. https://erica-bishop.github.io/posts/2022-20-24-example-blog."
   }
 ]
