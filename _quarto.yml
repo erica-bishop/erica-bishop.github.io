@@ -9,11 +9,14 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: blog_options.qmd
+        text: Blog
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme: 
+      - stylesheet.scss
+    mainfont: Prata
     toc: true
 
 editor: visual
