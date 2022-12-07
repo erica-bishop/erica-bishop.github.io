@@ -7,14 +7,3 @@ About this site
 ```{r}
 1 + 1
 ```
-
-<h1>this is my h1 element</h1>
-
-
-<h1 class="title"> this is another h1 element</h1>
-
-<p>This is a paragraph</p>
-<p class = "title">This is another paragraphy paragraph.</p>
-
-<h3 class="subtitle-format">another class selector formatting h3 header</h3>
-<h3>another h3 element without class selector</h3>
