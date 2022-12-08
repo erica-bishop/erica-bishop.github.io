@@ -1,7 +1,7 @@
 ---
 title: "Blog"
 listing: 
-  contents: posts 
+  contents: blogposts 
   type: grid
   sort: "date desc" 
   categories: true 

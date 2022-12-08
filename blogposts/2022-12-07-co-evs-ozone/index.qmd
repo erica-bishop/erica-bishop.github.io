@@ -3,7 +3,6 @@ title: "Electric Vehicles and Ozone Pollution"
 description: "Time series and linear regression analysis on the effects of electric vehicle adoption on ground-level ozone pollution"
 author:
   - name: Erica Bishop
-    url: https://samanthacsik.github.io/
     affiliation: Master of Environmental Data Science candidate at The Bren School of Environmental Science and Management
     affiliation-url: https://erica-bishop.github.io/ 
 date: 12-07-2022
