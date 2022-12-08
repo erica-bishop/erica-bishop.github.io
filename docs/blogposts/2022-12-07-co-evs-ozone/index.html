@@ -18,6 +18,25 @@ span.underline{text-decoration: underline;}
 div.column{display: inline-block; vertical-align: top; width: 50%;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -141,7 +160,13 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#background" id="toc-background" class="nav-link active" data-scroll-target="#background">Background</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -149,10 +174,31 @@ ul.task-list{list-style: none;}
 
 
 
+<p>Are the increased number of electric vehicles on the road reducing ozone pollution in Colorado? Using the skills I learned in Statistics for Environmental Data Science, a course offered through the Bren School of Environmental Science and Management, I set out to analyze the relationship between EV adoption and ground-level ozone pollution in Colorado.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>Despite its reputation as an adventure-loving, outdoorsy city, Denver has an air quality problem. Ground-level ozone pollution can turn an otherwise perfect day to be outside into one where its better to hunker down inside. People with asthma, emphysema, and other pre-existing respiratory issues are even more susceptible to symptoms and health complications caused by increased ozone concentrations. For context, the current EPA limit for ozone is 70 parts per billion (0.07 ppm)—a level that the Denver metro area frequently exceeds <span class="citation" data-cites="robbins2022">(<a href="#ref-robbins2022" role="doc-biblioref">Robbins 2022</a>)</span>.</p>
+<p>Unlike other common air pollutants like particulate matter or sulfur and nitrogen dioxides, ozone isn’t directly emitted from any human sources. Ground-level ozone (or tropospheric ozone, as opposed to stratospheric ozone) forms when primary pollutants like nitrous oxides (NO<sub>x</sub>) and volatile organic compounds (VOCs) react with sunlight to form ozone <span class="citation" data-cites="ozonean2022">(<a href="#ref-ozonean2022" role="doc-biblioref"><span>“Ozone and Your Health”</span> 2022</a>)</span>. Because sunlight is a necessary part of this reaction, ground-level ozone pollution is worse in the summer than the winter.</p>
+<p>Ozone pollution is primarily attributed to refueling gas-powered cars and trucks because these constituent pollutants are released into the atmosphere during refueling. The oil and gas industry in the state is also a major contributor<span class="citation" data-cites="jaffe2021a">(<a href="#ref-jaffe2021a" role="doc-biblioref">Jaffe 2021</a>)</span>. In the article <a href="https://coloradosun.com/2022/08/29/colorado-ozone-violations-charts-cutting-air-pollution/">Charts that explain why it’s so hard to cut Colorado ozone</a>, Michael Booth at The Colorado Sun discusses the challenges in battling ozone and the already high “background” ozone levels. Because EVs don’t require gasoline and don’t emit the ozone precursors that gas and diesel powered engines do, they’re a promising solution to local air quality. In fact, a 2010 study modeled the hypothetical effect of swapping out light duty vehicles for EVs and found that ozone concentrations were significantly decreased <span class="citation" data-cites="brinkman2010">(<a href="#ref-brinkman2010" role="doc-biblioref">Brinkman et al. 2010</a>)</span>. But are these hypothetical effects already starting to play out?</p>
 
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{bishop2022,
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-brinkman2010" class="csl-entry" role="doc-biblioentry">
+Brinkman, Gregory L., Paul Denholm, Michael P. Hannigan, and Jana B. Milford. 2010. <span>“Effects of Plug-in Hybrid Electric Vehicles on Ozone Concentrations in Colorado.”</span> <em>Environmental Science &amp; Technology</em> 44 (16): 6256–62. <a href="https://doi.org/10.1021/es101076c">https://doi.org/10.1021/es101076c</a>.
+</div>
+<div id="ref-jaffe2021a" class="csl-entry" role="doc-biblioentry">
+Jaffe, Mark. 2021. <span>“Some of the Worst Ozone Pollution in the u.s. Settles Along the Front Range. New Rules to Fix It Are Ahead.”</span> <em>The Colorado Sun</em>, June. <a href="https://coloradosun.com/2021/06/07/ozone-pollution-health-climate-change-epa-colorado/">https://coloradosun.com/2021/06/07/ozone-pollution-health-climate-change-epa-colorado/</a>.
+</div>
+<div id="ref-ozonean2022" class="csl-entry" role="doc-biblioentry">
+<span>“Ozone and Your Health.”</span> 2022. <a href="https://cdphe.colorado.gov/ozone-and-your-health">https://cdphe.colorado.gov/ozone-and-your-health</a>.
+</div>
+<div id="ref-robbins2022" class="csl-entry" role="doc-biblioentry">
+Robbins, Jim. 2022. <span>“Colorado’s Efforts Are Not Enough to Solve Its Ozone Problem.”</span> <em>Rocky Mountain PBS</em>, July. <a href="https://www.rmpbs.org/blogs/news/colorado-ozone-pollution-legislation/">https://www.rmpbs.org/blogs/news/colorado-ozone-pollution-legislation/</a>.
+</div>
+</div></section><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{bishop2022,
   author = {Erica Bishop},
   title = {Electric {Vehicles} and {Ozone} {Pollution}},
   date = {12/07/2022},

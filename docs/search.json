@@ -4,7 +4,14 @@
     "href": "blogposts/2022-12-07-co-evs-ozone/index.html",
     "title": "Electric Vehicles and Ozone Pollution",
     "section": "",
-    "text": "BibTeX citation:@online{bishop2022,\n  author = {Erica Bishop},\n  title = {Electric {Vehicles} and {Ozone} {Pollution}},\n  date = {12/07/2022},\n  url = {https://erica-bishop.github.io/posts/2022-12-07-co-evs-ozone/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nErica Bishop. 12AD–7AD. “Electric Vehicles and Ozone\nPollution.” 12AD–7AD. https://erica-bishop.github.io/posts/2022-12-07-co-evs-ozone/."
+    "text": "Are the increased number of electric vehicles on the road reducing ozone pollution in Colorado? Using the skills I learned in Statistics for Environmental Data Science, a course offered through the Bren School of Environmental Science and Management, I set out to analyze the relationship between EV adoption and ground-level ozone pollution in Colorado."
+  },
+  {
+    "objectID": "blogposts/2022-12-07-co-evs-ozone/index.html#background",
+    "href": "blogposts/2022-12-07-co-evs-ozone/index.html#background",
+    "title": "Electric Vehicles and Ozone Pollution",
+    "section": "Background",
+    "text": "Background\nDespite its reputation as an adventure-loving, outdoorsy city, Denver has an air quality problem. Ground-level ozone pollution can turn an otherwise perfect day to be outside into one where its better to hunker down inside. People with asthma, emphysema, and other pre-existing respiratory issues are even more susceptible to symptoms and health complications caused by increased ozone concentrations. For context, the current EPA limit for ozone is 70 parts per billion (0.07 ppm)—a level that the Denver metro area frequently exceeds (Robbins 2022).\nUnlike other common air pollutants like particulate matter or sulfur and nitrogen dioxides, ozone isn’t directly emitted from any human sources. Ground-level ozone (or tropospheric ozone, as opposed to stratospheric ozone) forms when primary pollutants like nitrous oxides (NOx) and volatile organic compounds (VOCs) react with sunlight to form ozone (“Ozone and Your Health” 2022). Because sunlight is a necessary part of this reaction, ground-level ozone pollution is worse in the summer than the winter.\nOzone pollution is primarily attributed to refueling gas-powered cars and trucks because these constituent pollutants are released into the atmosphere during refueling. The oil and gas industry in the state is also a major contributor(Jaffe 2021). In the article Charts that explain why it’s so hard to cut Colorado ozone, Michael Booth at The Colorado Sun discusses the challenges in battling ozone and the already high “background” ozone levels. Because EVs don’t require gasoline and don’t emit the ozone precursors that gas and diesel powered engines do, they’re a promising solution to local air quality. In fact, a 2010 study modeled the hypothetical effect of swapping out light duty vehicles for EVs and found that ozone concentrations were significantly decreased (Brinkman et al. 2010). But are these hypothetical effects already starting to play out?"
   },
   {
     "objectID": "index.html",
