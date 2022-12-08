@@ -23,3 +23,53 @@ Despite its reputation as an adventure-loving, outdoorsy city, Denver has an air
 Unlike other common air pollutants like particulate matter or sulfur and nitrogen dioxides, ozone isn't directly emitted from any human sources. Ground-level ozone (or tropospheric ozone, as opposed to stratospheric ozone) forms when primary pollutants like nitrous oxides (NO~x~) and volatile organic compounds (VOCs) react with sunlight to form ozone [@ozonean2022]. Because sunlight is a necessary part of this reaction, ground-level ozone pollution is worse in the summer than the winter.
 
 Ozone pollution is primarily attributed to refueling gas-powered cars and trucks because these constituent pollutants are released into the atmosphere during refueling. The oil and gas industry in the state is also a major contributor[@jaffe2021a]. In the article [Charts that explain why it's so hard to cut Colorado ozone](https://coloradosun.com/2022/08/29/colorado-ozone-violations-charts-cutting-air-pollution/), Michael Booth at The Colorado Sun discusses the challenges in battling ozone and the already high "background" ozone levels. Because EVs don't require gasoline and don't emit the ozone precursors that gas and diesel powered engines do, they're a promising solution to local air quality. In fact, a 2010 study modeled the hypothetical effect of swapping out light duty vehicles for EVs and found that ozone concentrations were significantly decreased [@brinkman2010]. But are these hypothetical effects already starting to play out?
+
+## Data
+
+Tropospheric ozone concentration data is collected and made available as Pre-Generated Data Files by the Environmental Protection Agency. I downloaded csv files for the Daily Summary Data on ozone (44201) from 2010 through 2022.
+
+As a proxy for the number of EVs on the road, I used EV registration from the Colorado Energy Office, available on the Atlas EV Hub's State EV Registration Data page, supported by the Open Vehicle Registration Initiative. Colorado EV (including plug-in hybrids and fuel-cell vehicles) registration data was available in csv file with date and location information. According to Atlas, the EV registration data can be used as a snapshot in time for the number of EVs on the road because the data doesn't distinguish between new registrations and renewals.
+
+You can follow along with my analysis by downloading the data above and running the code stored in my github repository: <https://github.com/erica-bishop/colorado-evs-airquality>.
+
+Both datasets were available on a daily time scale, but I chose to aggregate them by month to do a monthly analysis from 2010 through 2022. The coarser time resolution could help with a more robust analysis over time -- I didn't expect to see an immediate relationship between the day someone registers their EV and the ozone concentration that same day.
+
+## Analysis
+
+After downloading the data described above, I cleaned, joined, and otherwise wrangled the data for analysis in R. The ultimate goal of my analysis was to model the relationship between ozone concentration (monthly average parts per million) and the number of electric vehicles registered in the State.
+
+Because both ozone concentration and EV counts are changing differently over time -- ozone being seasonal and EV registrations being a long term trend. To establish this intuition and quantify the time-component, I ran a classical additive decomposition on each variable of interest (**Figure 1** and **Figure 2**).
+
+**Figure 1: Classical additive decomposition of electric vehicle registrations in Colorado.**
+
+![As expected, the long term trend is the dominant time series in this decomposition. Randomness is also a central component, but there is almost no seasonality.](fig1.jpg){fig-align="center"}
+
+**Figure 2: Classical additive decomposition of monthly average ozone concentrations in Colorado**
+
+![In contrast with the trends in EV registration, ozone is a primarily seasonal variable, with no discernible long-term trend in this decomposition.](fig2.jpg){fig-align="center"}
+
+After establishing that the variables are changing differently over time, I plotted the monthly ozone concentration average and monthly EV registration counts against each other in a simple scatter plot to see what the distribution looked like visually over my entire dataset.
+
+The distribution didn't look promising, so I decided to focus on just the top five most populous counties in Colorado (which are also all counties in the Front Range, where ozone pollution is of particular concern). This smaller spatial scale didn't lead to any clearer visual trends.
+
+I calculated the Pearson correlation coefficients between EVs and ozone for the entire data set and for the subsets within each of the five largest counties. As you can see in **Figure 3**, there is no correlation.
+
+**Figure 3: Table of Pearson correlation coefficients between monthly EV registration counts and monthly average ozone concentration**
+
+![The correlation coefficients over every region analyzed were small, indicating that the number of ev registrations doesn't account for any of the variance in ozone pollution.](cortable.png){fig-align="center" width="40%"}
+
+Although I established that there was no correlation between my variables, I still created a model -- knowing that the lack of correlation would mean that a linear model is essentially worthless. However, the model is a first step that can be iterated on and improved for future analysis. The outputs from my linear model are
+
+## Next steps
+
+The lack of any outcome from my analysis was disappointing, though not surprising. Electric vehicles are still just 0.64% of original vehicle registrations in Colorado[@evsinc]. Therefore, my analysis was examining less than 1% of a small piece of the many factors that contribute to ozone pollution. Studies have already shown that electrification can improve local air quality, so the outcomes of my analysis should not be taken to negate the importance of EVs[@schnell2019].
+
+Future analysis could be improved in several ways:
+
+-   Focusing on a smaller spatial scale and using finer air quality data and more localized EV data that includes information on miles driven. Registration data is only a proxy for EVs on the road in my current analysis, and there's no way to know when are where they are actually being driven.
+
+-   Running this analysis in a region where there are already more EVs on the road, such as California.
+
+-   Allowing more time to pass and EV adoption to increase -- in the future when EVs are a more significant portion of cars on the road this analysis may uncover a relationship.
+
+Although my analysis didn't find a relationship between EVs and ozone pollution, the existing body of evidence suggests this is still a worthwhile investigation[@erickson2020].
